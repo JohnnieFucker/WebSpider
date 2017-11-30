@@ -18,3 +18,14 @@ class A51CTOBookItem(scrapy.Item):
     # define the fields for your item here like:
     content = scrapy.Field()
     pass
+
+class SheJiYuanItem(scrapy.Item):
+    # define the fields for your item here like:
+    name = scrapy.Field()
+    foundTime = scrapy.Field()
+    type = scrapy.Field()
+    area = scrapy.Field()
+    address = scrapy.Field()
+    contacts = scrapy.Field()
+    tel = scrapy.Field()
+    pass

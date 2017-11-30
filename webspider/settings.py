@@ -14,6 +14,10 @@ BOT_NAME = 'webspider'
 SPIDER_MODULES = ['webspider.spiders']
 NEWSPIDER_MODULE = 'webspider.spiders'
 
+LOG_LEVEL = 'INFO'
+RETRY_ENABLED = False
+DOWNLOAD_TIMEOUT = 5
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'webspider (+http://www.yourdomain.com)'
 
@@ -21,14 +25,14 @@ NEWSPIDER_MODULE = 'webspider.spiders'
 ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-# CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS = 5000
 
 # Configure a delay for requests for the same website (default: 0)
 # See http://scrapy.readthedocs.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
 DOWNLOAD_DELAY = 3
 # The download delay setting will honor only one of:
-# CONCURRENT_REQUESTS_PER_DOMAIN = 16
+CONCURRENT_REQUESTS_PER_DOMAIN = 5000
 # CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
